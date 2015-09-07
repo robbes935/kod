@@ -1,0 +1,26 @@
+
+		<h2>Om websidan</h2>
+		<p id="back">Denna sida är uppbyggd med hjälp av tre olika kodnings språk, dessa är PHP, HTML och CSS. Dessa är ofta de vanligaste kodspråk som används till webbplatser med kanske en del javascript.</p>
+		<p id="back">Så för att börja förklara hur denna sida är gjord så kan jag gå in på vad jag hade för PHP kod. Min PHP kod var väldigt grundlig, det är så att jag använde den endast för länkarna som syns ovan. Detta är då åstadkommit med hjälp av en variabel som heter $_GET. I mitt fall så namngav jag den "page", vilket går att märka om du kollar i url:en, där det borde stå "index.php?page=omw" i slutet. Det är så att $_GET hämtar ett värde från url:en, vilket jag har använt för att skapa en länk mellan sidorna utan att behöva ladda om hela sidan varje gång du byter sida utan laddar bara om min text. Men det krävs lite mer än så för att den ska byta sida. Det krävs även en så kallad "If-sats", där man kollar om den har ett visst värde.</p>
+		<p id="back">Så för att visa på ett bättre sätt, ska jag visa slängan som jag har använt för navigationen.</p>
+		<p id="back">if(isset($_GET['page'])) {</p>
+		<p id="back">$page = $_GET['page']; </p>
+		<p id="back">if($page=="project")</p>
+		<p id="back">$file = "project.html";</p>
+		<p id="back">else if($page=="why")</p>
+		<p id="back">$file = "why.html";</p>
+		<p id="back">else if($page=="HTML")</p>
+		<p id="back">$file = "html.html";</p>
+		<p id="back">else if($page=="omw")</p>
+		<p id="back">$file = "omw.html";</p>
+		<p id="back">else if($page=="tid")</p>
+		<p id="back">$file = "Tidsplan.html";</p>
+		<p id="back">else</p>
+		<p id="back">$file = "Home.html";</p>
+		<p id="back">include $file;}</p>
+		<p id="back"> Här ser du att den säger om variabeln "page" i url:en har ett värde så får $page det värdet. Och om $page har värdet "project" så ska den ge variabeln $file värdet "project.html". Detta är då text filen som jag vill inkludera, vilket man ser i slutet med "include $file;". I mitt fall ligger mina sidor i samma mapp men som de inte hade gjort det så hade jag fått göra sökvägen till den likt om man vanligtvis länkar något, dvs med en relativ sökväg som använder / och .. för att visa om man går upp eller ner i mappar. Detta är vad jag använde mig av när det kom till PHP</p>
+		<p id="back">Då kom vi till HTML, vilket tro det eller ej är väldigt grundligt på denna sida. Den innefattar taggar som &lt;a&gt;, &lt;p&gt;, &lt;h&gt; för det mesta av text formateringen. jag skulle vilja säga att den mest avancerade HTML kod som jag har använt är till min navigeting vilket använde &lt;div&gt;, &lt;ul&gt;, &lt;li&gt; och &lt;a&gt;. Förutom det så är den väldigt enkel och kanske det mest avancerade är när det länkar in CSS:en genom id och classer, vilket jag räknar mer till CSS:en än HTML:en.</p>
+		<p id="back">Vilket leder mig till CSS. Min CSS är inte heller så avancerad om man verkligen kollar på den, den är lång och innefattar mycket kod (närmare 300 rader) men är endå inte så avancerad. Den använder saker som de klassiska "font-family" och "color" på många ställen. vilket leder mig till att tro att kanske det mest avancerade är "text-shadow", som lägger en kopia av objektet bakom för att få effekten av en skugga. Denna är vanligtvis svart men det går att ändra med CSS. Så överlag har det mest varit arbete med padding, fonter, width och liknande för att forma utseandet som jag ville att denna sida skulle få.</p>
+		<p id="back">Vad som jag strävade efter med denna sida var att göra information lätt tillgänglig samt med syfte att prova på ett nytt färgschema som jag aldrig har använt tidigare. Jag själv tycker då att jag har lyckats med detta, vanligtvis brukar jag jobba med väldigt ljusa sidor medan nu har jag gjort en sida med mörkare perspektiv samt använt mig av blå och lila nyanser, vilket jag tycker passar väl och det var utifrån detta som jag valde min banner. Solnedgången är ett klassiskt motiv men det passade mycket väl med de färger som jag hade valt. Medan det skulle kunna ses som om jag har varit snål med färg så har jag gjort mitt val utifrån vad jag känner passar best med bannern utan att gå överbord med en hel regnbåge av färg.</p>
+		</body>
+	</html>

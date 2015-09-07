@@ -1,0 +1,100 @@
+body{ background: #ddd;}
+
+article{
+	height: 500px;
+	width: 260px;
+	border: 1px solid #555;
+	border-radius: 2px;
+	background: white;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+
+article div{
+	background: white;
+	height: 200px;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	text-align: justify;
+}
+
+a{ color: black; }
+
+
+
+
+/*--------------------------- art 1-----------------------*/
+#art1{background: url("../img/gron.jpg");}
+
+#art1:hover{ 
+	-webkit-box-shadow: 0 0 10px 2px #333;
+	box-shadow: 0 0 10px 2px #333;
+}
+
+/*--------------------------- art 2-----------------------*/
+
+#art2{background: url("../img/rot.jpg");}
+
+#art2 img{
+	position: relative;
+	width: 160px;
+	margin: 0 auto;
+	top: 50%;
+	margin-top: -80px;
+	opacity: 0.85;
+	display: none;
+}
+
+#art2:hover img{ display: block;}
+#art2:hover { cursor: pointer;}
+
+/*--------------------------- art 3-----------------------*/
+#art3{background: url("../img/bland.jpg");}
+
+.overlay{ 
+	background: #334466;
+	opacity: 0.5;
+	position: relative;
+	height: 100%;
+	padding: 0;
+	display: none;
+}
+
+#art3:hover{ cursor: pointer;}
+#art3:hover .overlay{ display: block;}
+
+
+
+/*--------------------------- art 4-----------------------*/
+#art4{background: url("../img/brok.jpg");}
+
+#art4 img{
+	position: relative;
+	width: 160px;
+	margin: 0 auto;
+	top: -50%;
+	margin-top: -80px;
+	opacity: 0.85;
+	display: none;
+}
+
+#art4:hover{ cursor: pointer;}
+#art4:hover img{ display: block;}
+
+#art4:hover{ 
+	-webkit-box-shadow: 0 0 10px 2px #3030bb;
+	box-shadow: 0 0 10px 2px #3030bb;
+}
+
+.overlay{ 
+	background: #334466;
+	opacity: 0.3;
+	position: relative;
+	height: 100%;
+	padding: 0;
+	display: none;
+}
+
+#art4:hover .overlay{ display: block;}

@@ -1,0 +1,97 @@
+html {
+	font-family: verdana;
+	background-color: #666;
+	overflow: scroll;
+}
+body {
+	background-color: #ccc;
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	overflow: auto;
+}
+h1 {
+	padding: 10px;
+	padding-top: 0px;
+}
+p{
+	padding: 10px;
+}
+#klt {
+	font-size: 0.8em;
+}
+a {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #000;
+}
+#bu {
+	text-align: center;
+}
+nav {
+	background-color: #fff;
+}
+li {
+		list-style-type: none;
+		display: inline-block;
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		padding: 15px;
+}
+#art{
+	height: 500px;
+	margin: 0 auto;
+	width: 23%;
+	border: 1px solid #555;
+	border-radius: 2px;
+	background: white;
+	display: inline-block;
+	position: relative;
+
+}
+
+.slide-up{
+	background: white;
+	height: 100px;
+	width: 100%;
+	text-align: justify;
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+
+	-webkit-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+
+#art:hover > .slide-up {
+	height: 100%;
+}
+
+a{ 
+	color: black;
+}
+
+#art{background: url("../img/brok.jpg");}
+
+#art:hover{ cursor: pointer;}
+
+#art:hover{ 
+	-webkit-box-shadow: 0 0 10px 2px #3030bb;
+	box-shadow: 0 0 10px 2px #3030bb;
+}
+
+.overlay{ 
+	background: #334466;
+	opacity: 0.3;
+	position: relative;
+	height: 100%;
+	padding: 0;
+	display: none;
+}
+
+#art:hover .overlay{
+	display: block;
+}
+footer {
+	display: block;
+}
